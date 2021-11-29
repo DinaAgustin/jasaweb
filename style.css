@@ -1,0 +1,286 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+	text-decoration: none;
+}
+
+.container{
+	width:1700px;
+	margin: auto;
+	position: relative;
+}
+
+/*------------navigasi-----------*/
+.logo a{
+	font-size: 50px;
+	font-weight: bold;/*menebalkan huruf*/
+	color:#d268ca ;/*di internet ada color hunt untuk melihjat skema warna*/
+	letter-spacing: -4px;/*supaya tidak ada jarak perhuruf*/
+	float: left;
+}
+
+.menu{
+	float: right;
+}
+
+nav{
+	width: 100%;/*mengatur panjanng*/
+	margin: auto;/*membuat di tengah tengah*/
+	display: flex;
+	line-height: 80px;/*mengatur tinggi*/
+	position: sticky;
+	top: 0;/*supaya kalau di geser tetap di atas trs*/
+	z-index: 1;/*supaya di depan terus*/
+	background-color: #fff;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);/*mengatur bayangan*/
+}
+
+nav ul{
+	list-style-type: none;/*menghilangkan bullet*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	color: black;
+	font-weight: bold;/*membuat tulisan tebal*/
+	text-align: center;
+	padding: 0 16px;
+}
+nav ul li a:hover{
+	text-decoration: underline;/*supaya jika di klik ada garis bawah*/
+}
+
+a.tombol-ungu{
+	background:#d268ca;
+	border-radius: 10px;/*supaya da kotak di tombol*/
+	margin-top: 20px;
+	padding: 10px 20px ;
+	color: #fff;
+	cursor: pointer;/*supaya cursor nya berubah jadi tangan*/
+}
+
+.tombol-ungu:hover{
+	background-color: #333;
+	text-decoration: none;/*menghilangkan garis bawah*/`
+}
+
+/*-----------------------------------------------*/
+
+/*-----------section home  -------------*/
+
+section{
+	margin: auto;
+	display: flex;
+	margin-bottom: 50px;
+}
+#home img{
+	width: 50%;/*memperkecil gambar*/
+}
+.kolom{
+	margin: 50px 0;
+}
+
+.kolom .diskripsi{
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: bold;
+	color: #333;
+	width: 100%;
+}
+
+.tombol-hitam{
+	background:#333;
+	border-radius: 10px;/*supaya da kotak di tombol*/
+	margin-top: 20px;
+	padding: 10px 20px ;
+	color: #fff;
+	cursor: pointer;/*supaya cursor nya berubah jadi tangan*/
+	font-weight: bold;
+}
+
+.tombol-hitam:hover{
+	background-color: #d268ca;
+	text-decoration: none;
+}
+
+p{
+	margin: 10px 0;
+}
+
+/*------------------------------*/
+
+/*-----section courses-----*/
+
+#courses img{
+	width: 50%;
+}
+
+/*-------------------------------*/
+
+/*-------section tutors---------*/
+.tengah{
+	text-align: center;
+	width: 100%;
+}
+
+.kolom-tutor{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap:wrap ;/*agar tidak terlalu lurus di tengah*/
+}
+
+.list-tutor{
+	width: 20%;
+	margin: auto;
+}
+
+.list-tutor img{
+	width: 80%;
+	border-radius: 50%;/*supaya foto menjadi bullet*/
+}
+.list-tutor p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+}
+
+/*-------------------------*/
+
+/*-----partners-----*/
+.tengah{
+	text-align:center;
+	width:100%;
+}
+.partners-list{
+	width:100%;
+	position:relative;
+	display:flex;
+	flex-wrap:wrap;/*agar tidak terlalu lurus di tengah*/
+}
+
+.kartu-partners{
+	width:20%;
+	margin:auto;
+}
+
+.kartu-partners img{
+	width:80%;
+	border-radius:50%;/*supaya foto menjadi bullet*/
+}
+
+/*-------------------------------------*/
+
+/*------section contact-----*/
+#contact{
+	background-color: #eee;
+	padding: 50px 0;
+}
+
+.footer{
+	width:100%;
+	position:relative;
+	display:flex;
+	flex-wrap:wrap;/*agar tidak terlalu lurus di tengah*/
+	margin: auto;
+}
+
+.kolom-footer{
+	width:20%;
+	margin: 0 auto;
+}
+
+.kolom-footer h3{
+	font-size: 30px;
+	font-weight: bold;
+	color: #333;
+	width: 100%;
+	line-height: 50px;
+	margin-bottom: 20px;
+}
+
+#copyright{
+	text-align: center;
+	padding: 90px 0;
+}
+
+#home,#courses,#tutors,#partners{
+	padding-top: 150px;
+}
+
+/*-------------------------------------*/
+@media screen and (max-width: 991.98px){
+	.container{
+		width: 90%;
+	}
+
+	.logo a{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	nav .menu{
+		width: 100%;
+		margin: auto;
+	}
+
+	nav .menu ul{
+		text-align: center;
+		margin: auto;
+		line-height: 50px;/*jarak kebawah*/
+	}
+	nav .menu ul li{
+		display: inline-block;
+		float: none;
+	}
+
+	section{
+		display: block;
+	}
+
+	section img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.kolom-tutor{
+		width: 80%;
+		margin: auto;
+		display: block;
+		
+	}
+
+	.list-tutor{
+		width: 50%;
+		margin: auto;
+		
+	}
+
+	.list-tutor img{
+		margin: auto;
+	}
+
+	.kolom-footer{
+		width: 50%;
+	}
+}
+
+.form{
+	
+	position: relative;
+	left: 250px;
+}
